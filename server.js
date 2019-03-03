@@ -3,6 +3,7 @@ var express = require('express'),
   port = 3002;
 
 var path = require('path');
+const dialogflow = require('./prueba');
 
 app.listen(port);
 
@@ -31,6 +32,13 @@ app.get('/v1/ticker', (req, res, next) => {
     }
   });
 });
+
+
+ // -********************* dialogflow  *******************-
+
+ app.get('/v1/test', (req, res, next) => {
+   dialogflow.runSample();
+ });
 
 app.listen(3000, function () {
   console.log('polython 2019 app listening on port ' + port);

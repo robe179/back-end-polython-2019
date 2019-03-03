@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bitbot-polython",
+  "private_key_id": "9f503cb0eadc6d90bfce37775d6539df764886d4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDKxKCDXXYT08p7\nxASKWKO/qrT5+9o7sp8e586ihXb1hu0rXoR9trCW1Me/DIVm43QxeBJZKfq6OQbd\n6S4m9XpDEPhEwh1DMceWaKyeFZHGXV+XA39ttzSaJEx1x+KwUUzfvO7uYxFaCAXE\nYIYFwtru4E68rxJaDEBwl0Hf7C12KSnn3WnYN1qy9Y+nO8K+vCUj8fa54KMuKYDO\nitILzJ7r0VPIQWrGWa6DN8DrVjEEJdGN/Q2afMacb0DUYwofwavJg0lN4O0/4Chg\nVqEihIHuBo0T82CqwhaDQ5eQxX7tEWI3sbXJ4U1sxoMfpEG02SzqO3yEJhtEcgoV\nXbNiDM+VAgMBAAECggEAAipECVwynqSUOWrO55ppslff7vloHe1/aZuRng+kDi5j\nScfn8YyOe7pkDsQcPx7J61Ry9kczHfWAWsT2I0TJUzUA0sqO+G5+bbql+TVMd4og\nsz4HrRYqEdb/PblJ4paDpkQ7jAmqDbIfO+2kNUkckqLVO0FB4bGNp3PU30+V7q9n\nHICEZ4EJtoN8yeUveqZlXmi+v6lNyCETDGuVHd1GTD9eysuTNZ2eWBpwQ7+WAOUn\nDy+zXQcmd42VW92srUMz4B3W1XVITP7lZU1O9NSmTk0RmUxzWCeLebFOLfRZzhFw\nsQ/GSwXqmR31Xl8iNvG9mvinL8CXqqK/1W5aL1hyIwKBgQDsXq8Feoac0b15uwYH\nTIj4OB2yHhP8uBayQ922C7dF/GcBsHHwJzSnhRjfBW+MGO7hzrnyiinswMXvhald\nOtETfA4lYCfH1zO7zKOly95r266mLjx+9abF+OdpBQQI3KdCAcK5ArCplLw2/rHF\nQv+9tI+R89CCbAw72TCylDKtvwKBgQDbm45gmG04OtNSEM1PAz5TiO+fAHyo3RR+\nFofcKC5fkHKxq37+2bAA9CqBq2xkaN7/gqzPssWKFfdStgG6Pm2u5KXxrO3wf1xz\n0i5GdwMCJvQy2tN35JmiS08jIujFX6F6xzR+zH8KDdJ2PBiNgWnQJ4uCT9IcuHiN\nZEUvAj9/qwKBgQDW/kA/wXSTSwsGoCAZn3muHIyWKFmRsneiaaxOG1X2KGAg3zaj\nc2WnQZ6frDgLu9n8NaZYf2cm2yiudmrYS9lD2cCcKlvEn2+Ez9vBwC9s94Jh0Qhh\nilrJE16Y3WEQFnNjzGorEdFSTeDsPLnBbPFkwckcviHXnyN5hFGQ/M8jzQKBgFvH\n8YNRcSQ1AaikuQmys1O6QVtUmsUAUNY5mGJcsLTj6+txX0wnsrVTVoiHGnAEnF5x\nQMQ1VPXXJFx/EM3D1ZdonCobOf5vXDZTu19b0fgOS7UNW6AZ/FOl4dcvedUzmIt1\nwezUjqunBzS+/Qv28EA8psO5lHjIaCm/pGJ3MA6tAoGALOwhQKQKOXd5qMhGTVQQ\nBeN866MHpKkhsBDACAcUZ1JTbXczCqGzi+3Ap+pP6EJXZ0N5XamMXcTuMDlqnXYL\nno1p7x/BCb3eXK+tF1bttNGJfiJu65Lad+2JXAe5fR+74dEHmSbiaUHN4o7kXe/K\nuzpfM1x9o1XQWJj8lLYL1e0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow-tybmtk@bitbot-polython.iam.gserviceaccount.com",
+  "client_id": "116809178148007615421",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-tybmtk%40bitbot-polython.iam.gserviceaccount.com"
+}
