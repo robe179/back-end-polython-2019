@@ -35,9 +35,12 @@ app.get('/v1/ticker', (req, res, next) => {
 
  // -********************* dialogflow  *******************-
 
- app.get('/v1/test', (req, res, next) => {
-   var data = dialogflow.runSample("bitbot-polython", "¿Cuánto vale un bitcoin?");
+ app.get('/v1/test', async (req, res, next) => {
+
+
+   var data = await dialogflow.runSample("bitbot-polython", "¿Cuánto vale un bitcoin?");
    console.log(data);
+   res.send(data);
  });
 
 app.listen(3000, function () {
