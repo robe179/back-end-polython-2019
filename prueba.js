@@ -13,7 +13,7 @@ async function runSample (projectId = 'bitbot-polython', pregunta) {
   const sessionClient = new dialogflow.SessionsClient({
     keyFilename: 'BitBot-5a5a5dc1f884.json'
   })
-  
+
   const sessionPath = sessionClient.sessionPath(projectId, sessionId)
 
   // The text query request.
@@ -32,16 +32,21 @@ async function runSample (projectId = 'bitbot-polython', pregunta) {
   // Send request and log result
      // Do async job
    const responses = await sessionClient.detectIntent(request);
-   return responses;
+
   // console.log('Detected intent')
-  // const result = responses[0].queryResult
+  const result = responses[0].queryResult
   // console.log(`  Query: ${result.queryText}`)
   // console.log(`  Response: ${result.fulfillmentText}`)
-  // if (result.intent) {
-  //   console.log(`  Intent: ${result.intent.valorBitcoin}`)
-  // } else {
-  //   console.log(`  No intent matched.`)
-  // }
+  if (result.intent) {
+    // console.log(`  Intent: ${result.intent.valorBitcoin}`)
+    return responses;
+  } else {
+    var objError = {
+      error: "No intent matched. "
+    }
+    return objError;
+    // console.log(`  No intent matched.`)
+  }
 
 }
 
