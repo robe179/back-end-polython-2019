@@ -4,7 +4,7 @@ var express = require('express'),
 
 var path = require('path');
 
-app.listen(port, "100.112.24.161");
+app.listen(port);
 
 app.use( function(req, res, next){
   res.header( "Access-Control-Allow-Origin", "*" );
