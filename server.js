@@ -33,11 +33,11 @@ app.get('/v1/ticker', (req, res, next) => {
   });
 });
 
-
  // -********************* dialogflow  *******************-
 
  app.get('/v1/test', (req, res, next) => {
-   dialogflow.runSample();
+   var data = dialogflow.runSample("bitbot-polython", "¿Cuánto vale un bitcoin?");
+   console.log(data);
  });
 
 app.listen(3000, function () {

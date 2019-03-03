@@ -42,10 +42,10 @@ async function runSample (projectId = 'bitbot-polython', pregunta) {
   }
 }
 
-try {
-  runSample("bitbot-polython", "¿Cuánto vale un bitcoin?")
-} catch (error) {
-  console.log('ERRO')
-}
+// try {
+//   runSample("bitbot-polython", "¿Cuánto vale un bitcoin?")
+// } catch (error) {
+//   console.log('ERRO')
+// }
 
 exports.runSample=runSample;
