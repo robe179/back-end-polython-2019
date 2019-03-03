@@ -36,14 +36,44 @@ app.get('/v1/ticker', (req, res, next) => {
  // -********************* dialogflow  *******************-
 
  app.get('/v1/dialog', (req, res, next) => {
-   console.log("Vemos valor post ", req.query.question);
+
    const promise = dialogflow.runSample("bitbot-polython", req.query.question);
-   promise.then( data => {
-     console.log(data);
-     res.send(data);
+   var allData = "";
+   promise.then( (data) => {
+     this.allData = data;
+     // console.log(this.allData);
+     next();
+     // res.send(data);
    }).catch(error => {
      console.log("error ", error)
    });
+ }, (req, res, next) => {
+   var data2 = this.allData[0];
+   console.log(data2.queryResult);
+
+   switch (data2.queryResult.intent.displayName) {
+     case "btc_mxn":
+        var ticker = "https://api.bitso.com/v3/ticker/?book=btc_mxn";
+        var requestTicker = requestjson.createClient( ticker );
+        requestTicker.get('', (err, resM, body) => {
+          if(err){
+            console.error(err);
+            res.status(500).send("Hubo algun problema con la conexión");
+          }else {
+            var ultimaPuja = body.payload.last;
+            var msj = data2.queryResult.fulfillmentText.replace("@valor",ultimaPuja);
+
+            res.send(msj);
+          }
+        });
+       break;
+
+       default:
+        res.send(data2.queryResult.fulfillmentText);
+   }
+
+   // var requestTicker = requestjson.createClient( ticker );
+   // res.send(data2);
  });
 
 app.listen(3000, function () {
