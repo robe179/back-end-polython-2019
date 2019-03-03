@@ -21,6 +21,7 @@
     "dialogflow": "^0.8.0",
     "express": "^4.16.4",
     "request-json": "^0.6.4",
+    "twilio": "^3.29.0",
     "uuid": "^3.3.2"
   }
 }
